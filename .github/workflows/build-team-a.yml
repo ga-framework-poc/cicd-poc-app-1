@@ -8,7 +8,6 @@ jobs:
     uses: hippyod/cicd-manager/.github/workflows/build-from-source.yml@development
     with:
       system-name: system-a
-    secrets: inherit
   deploy-to-dev:
     needs: build-from-source
     uses: hippyod/cicd-manager/.github/workflows/promote.yml@development
