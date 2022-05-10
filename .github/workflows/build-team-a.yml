@@ -14,7 +14,6 @@ jobs:
     uses: ga-framework-poc/cicd-manager/.github/workflows/promote.yml@development
     with:
       system-name: system-a
-      team-name: team-a
     secrets: inherit
   gather-test-environments:
     needs: deploy-to-dev
@@ -49,5 +48,4 @@ jobs:
     uses: ga-framework-poc/cicd-manager/.github/workflows/promote.yml@development
     with:
       system-name: system-a
-      team-name: team-a
       environments: ${{ needs.gather-test-environments.outputs.test-environments }}
