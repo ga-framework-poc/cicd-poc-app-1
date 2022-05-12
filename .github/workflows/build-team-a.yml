@@ -5,13 +5,13 @@ on:
   workflow_dispatch:
 jobs:
   build-from-source:
-    uses: ga-framework-poc/cicd-manager/.github/workflows/build-from-source.yml@development
+    uses: ${{ github.repository_owner }}/cicd-manager/.github/workflows/build-from-source.yml@development
     with:
       system-name: system-a
     secrets: inherit
   deploy-to-all:
     needs: build-from-source
-    uses: ga-framework-poc/cicd-manager/.github/workflows/promote.yml@development
+    uses: ${{ github.repository_owner }}/cicd-manager/.github/workflows/promote.yml@development
     with:
       system-name: system-a
     secrets: inherit
