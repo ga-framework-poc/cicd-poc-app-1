@@ -11,7 +11,7 @@ image:
   tag: "dev"
 
 imagePullSecrets:
-  - name: "system-a-pull-secret"
+  - name: "system-a-team-a-pull-secret"
 nameOverride: "cicd_app_poc_1"
 fullnameOverride: "system-a-team-a-cicd-app-poc-1"
 
