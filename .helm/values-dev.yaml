@@ -59,7 +59,7 @@ ingress:
 
 env:
   - name: MESSAGE_WELCOME
-    value: Hello from the updated Helm and Kubernetes!
+    value: Hello from the original welcome of Helm and Kubernetes!
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
